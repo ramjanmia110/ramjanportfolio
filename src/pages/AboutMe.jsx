@@ -89,7 +89,7 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="bg-slate-900 min-h-screen flex items-center justify-center p-4 font-sans">
+    <div className="bg-slate-900   min-h-screen flex items-center justify-center p-4 font-sans">
       
       <div className="w-full max-w-7xl mx-auto">
         <motion.div

@@ -48,7 +48,7 @@ const Menubar = () => {
   };
 
   return (
-    <header className="relative w-full min-h-screen flex flex-col animated-gradient overflow-hidden">
+    <header className="relative w-full h-[800px]  flex flex-col animated-gradient overflow-hidden">
       
       <Container>
       
