@@ -9,6 +9,9 @@ import ramjan from '../assets/ramjan.png';
 import Container from '../Components/Container';
 import Flex from '../Components/Flex';
 import ProfileCard from './ProfileCard';
+import { CiFacebook, CiMail } from 'react-icons/ci';
+import { TiSocialLinkedinCircular } from 'react-icons/ti';
+import { VscGithub } from 'react-icons/vsc';
 
 
 const navLinks = [
@@ -128,6 +131,33 @@ const Menubar = () => {
               >
                 I'm a professional web developer with strong skills in HTML, CSS, JavaScript, React, Tailwind CSS, and more. I have been working in this field for almost 3 years, completing all projects successfully with 100% client satisfaction.
               </motion.p>
+
+              <Flex className='text-[33px] text-secondary items-center gap-x-[23px] my-8 cursor-pointer'>
+                <CiFacebook />
+                <TiSocialLinkedinCircular />
+                <VscGithub />
+                <CiMail />
+              </Flex>
+
+              <div className="flex gap-4 flex-wrap">
+      
+      <a
+         href="/mdramjanmiaresume.pdf"
+        download
+        className="inline-block text-white font-semibold px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all duration-300 shadow-lg"
+      >
+        Download CV
+      </a>
+
+     
+      <a
+        href="/path/to/your-portfolio.pdf"
+        download
+        className="inline-block text-white font-semibold px-6 py-3 rounded-full bg-gradient-to-r from-green-400 via-teal-500 to-cyan-500 hover:from-green-500 hover:to-cyan-600 transition-all duration-300 shadow-lg"
+      >
+         Portfolio
+      </a>
+    </div>
             </div>
 
            
