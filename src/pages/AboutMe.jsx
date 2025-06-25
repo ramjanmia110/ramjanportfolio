@@ -23,7 +23,7 @@ const aboutData = {
         result: 'CGPA: 4.50 out of 5.00',
       },
       {
-        degree: 'Secondary School Certificate (SSC)',
+        degree: 'Secondary School Certificate (S.S.C)',
         institute: 'Mollartek Udayan High school & Collage',
         session: '2011',
         result: 'GPA: 4.88 out of 5.00',
