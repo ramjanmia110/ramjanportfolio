@@ -10,8 +10,14 @@ const aboutData = {
   education: {
     icon: <GraduationCap size={24} />,
     items: [
+       {
+        degree: 'M.Sc (Honours) in Physics',
+        institute: 'University Of Dhaka (7 affiliated college)',
+         session: '2018',
+       
+      },
       {
-        degree: 'BSc (Honours) in Physics',
+        degree: 'B.Sc (Honours) in Physics',
         institute: 'University Of Dhaka (7 affiliated college)',
          session: '2017',
        
