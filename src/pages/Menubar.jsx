@@ -271,7 +271,7 @@ const Menubar = () => {
 
 
   return (
-    <header className="relative w-full min-h-[80vh] lg:h-[100vh] flex flex-col animated-gradient overflow-hidden">
+    <header className="relative w-full min-h-[90vh] lg:h-[100vh] flex flex-col animated-gradient overflow-hidden">
       <Container>
         <nav className="relative z-20 flex items-center justify-between py-6 mr-[261px]">
         
@@ -307,7 +307,7 @@ const Menubar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white z-30 relative w-8 h-8 focus:outline-none left-[200px]"
+              className="text-white z-30 relative w-8 h-8 focus:outline-none left-[170px]"
             >
               
               <motion.div
