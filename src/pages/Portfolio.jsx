@@ -1,68 +1,111 @@
 import React, { useState, useEffect } from 'react'; // <--- THIS LINE IS NOW CORRECT
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiX, FiLink, FiGithub } from 'react-icons/fi';
+import image01 from '../assets/web03.png'
+import image02 from '../assets/web01.png'
+import image03 from '../assets/web02.png'
+import image04 from '../assets/ecomerce01.png'
+import image05 from '../assets/app01.png'
+import image06 from '../assets/app02.png'
+import image07 from '../assets/app034.png'
+import image08 from '../assets/game01.png'
+import image09 from '../assets/calculator01.png'
+
+
 
 
 const portfolioData = [
   {
     id: 1,
-    title: 'E-commerce Platform',
-    category: 'Web App',
-    image: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    title: 'Creative Agency Website',
+    category: 'Web Design',
+    image: image01,
     description: 'A full-featured e-commerce platform built with the MERN stack. Includes product listings, shopping cart, user authentication, and a Stripe payment gateway. The goal was to create a seamless and fast shopping experience.',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
-    liveLink: '#',
+    liveLink: 'https://ramjanmia110.github.io/website-project/',
     repoLink: '#',
   },
-  {
+
+   {
     id: 2,
-    title: 'Mobile Banking App',
-    category: 'Mobile App',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-    description: 'A secure and intuitive mobile banking application for iOS and Android. Features include balance checking, fund transfers, bill payments, and biometric login. Designed for simplicity and security.',
-    tech: ['React Native', 'Firebase', 'Redux'],
-    liveLink: '#',
+    title: 'Creative Agency Website',
+    category: 'Web Design',
+    image: image02,
+    description: 'A full-featured e-commerce platform built with the MERN stack. Includes product listings, shopping cart, user authentication, and a Stripe payment gateway. The goal was to create a seamless and fast shopping experience.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
+    liveLink: 'https://ramjanmia110.github.io/sapwan_project/',
     repoLink: '#',
   },
-  {
+
+   {
     id: 3,
-    title: 'Corporate Branding',
-    category: 'Branding',
-    image: 'https://images.unsplash.com/photo-1559028012-215268c62920?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1084&q=80',
-    description: 'A complete branding overhaul for a tech startup. This project involved creating a new logo, color palette, typography guidelines, and marketing materials to establish a strong and modern brand identity.',
-    tech: ['Figma', 'Adobe Illustrator', 'Photoshop'],
-    liveLink: '#',
+    title: 'Creative Agency Website',
+    category: 'Web Design',
+    image: image03,
+    description: 'A full-featured e-commerce platform built with the MERN stack. Includes product listings, shopping cart, user authentication, and a Stripe payment gateway. The goal was to create a seamless and fast shopping experience.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
+    liveLink: 'https://ramjanmia110.github.io/patroll_project/',
+    repoLink: '#',
   },
   {
     id: 4,
-    title: 'Project Management Tool',
-    category: 'Web App',
-    image: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-    description: 'A collaborative project management dashboard that helps teams organize tasks, track progress, and communicate effectively. Features drag-and-drop kanban boards, real-time updates, and reporting.',
-    tech: ['Vue.js', 'Firebase', 'Tailwind CSS'],
-    liveLink: '#',
+    title: 'Expense Tracker',
+    category: 'Mobile App',
+    image: image05,
+    description: 'A secure and intuitive mobile banking application for iOS and Android. Features include balance checking, fund transfers, bill payments, and biometric login. Designed for simplicity and security.',
+    tech: ['React Native', 'Firebase', 'Redux'],
+    liveLink: 'https://expense-tracker-flax-alpha.vercel.app/',
     repoLink: '#',
   },
   {
     id: 5,
-    title: 'Fitness Tracker App',
-    category: 'Mobile App',
-    image: 'https://images.unsplash.com/photo-1549476464-373922117533?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-    description: 'A mobile app to track workouts, set fitness goals, and monitor progress over time. Integrated with HealthKit and Google Fit to sync data seamlessly.',
-    tech: ['Flutter', 'Dart', 'Google Fit API'],
-    liveLink: '#',
-    repoLink: '#',
+    title: 'To Do App',
+    category: 'Branding',
+    image: image07,
+    description: 'A complete branding overhaul for a tech startup. This project involved creating a new logo, color palette, typography guidelines, and marketing materials to establish a strong and modern brand identity.',
+    tech: ['Figma', 'Adobe Illustrator', 'Photoshop'],
+    liveLink: 'https://ramjanmia110.github.io/todoProject2024/',
   },
   {
     id: 6,
-    title: 'Creative Agency Website',
-    category: 'Web Design',
-    image: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80',
-    description: 'A visually stunning and highly animated website for a creative design agency. The site showcases their portfolio and services using modern web technologies to create an immersive user experience.',
-    tech: ['Gatsby', 'React', 'GSAP', 'Contentful'],
-    liveLink: '#',
+    title: 'Game Project',
+    category: 'Web App',
+    image: image08,
+    description: 'A collaborative project management dashboard that helps teams organize tasks, track progress, and communicate effectively. Features drag-and-drop kanban boards, real-time updates, and reporting.',
+    tech: ['Vue.js', 'Firebase', 'Tailwind CSS'],
+    liveLink: 'https://ramjanmia110.github.io/gameProject/',
     repoLink: '#',
   },
+  {
+    id: 7,
+    title: 'Quiz App ',
+    category: 'Mobile App',
+    image: image06,
+    description: 'A mobile app to track workouts, set fitness goals, and monitor progress over time. Integrated with HealthKit and Google Fit to sync data seamlessly.',
+    tech: ['Flutter', 'Dart', 'Google Fit API'],
+    liveLink: 'https://ramjanmia110.github.io/Quizapp1/',
+    repoLink: '#',
+  },
+  {
+    id: 8,
+    title: 'Calculator Project',
+    category: 'Web App',
+    image: image09,
+    description: 'A visually stunning and highly animated website for a creative design agency. The site showcases their portfolio and services using modern web technologies to create an immersive user experience.',
+    tech: ['Gatsby', 'React', 'GSAP', 'Contentful'],
+    liveLink: 'https://ramjanmia110.github.io/calculator/',
+    repoLink: '#',
+  },
+
+   {id: 9,
+    title: 'E-commerce Platform',
+    category: 'Web Design',
+    image: image04,
+    description: 'A full-featured e-commerce platform built with the MERN stack. Includes product listings, shopping cart, user authentication, and a Stripe payment gateway. The goal was to create a seamless and fast shopping experience.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
+    liveLink: 'https://ecomerceproject2025.vercel.app/',
+    repoLink: '#',
+  }
 ];
 
 const categories = ['All', 'Web App', 'Mobile App', 'Web Design', 'Branding'];

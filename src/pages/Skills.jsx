@@ -102,8 +102,7 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-        >
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 lg:[grid-template-columns:repeat(4,minmax(250px,1fr))]">
           {skillsData.map((skill) => (
             <Skill key={skill.name} {...skill} />
           ))}

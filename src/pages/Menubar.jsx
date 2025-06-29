@@ -271,7 +271,7 @@ const Menubar = () => {
 
 
   return (
-    <header className="relative w-full min-h-[75vh] lg:h-[100vh] flex flex-col animated-gradient overflow-hidden">
+    <header className="relative w-full min-h-[80vh] lg:h-[100vh] flex flex-col animated-gradient overflow-hidden">
       <Container>
         <nav className="relative z-20 flex items-center justify-between py-6 mr-[261px]">
         
@@ -285,7 +285,7 @@ const Menubar = () => {
           />
 
        
-          <ul className="hidden md:flex items-center gap-x-8 text-white font-montser font-medium text-lg lg:text-[20px] ml-[261px]">
+          <ul className="hidden md:flex items-center gap-x-8 text-white font-montser font-medium md:text-[14px] md:ml-[32px]  text-lg lg:text-[20px] lg:ml-[261px]">
             {navLinks.map((link, index) => (
               <motion.li
                 key={link.text}
@@ -307,7 +307,7 @@ const Menubar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white z-30 relative w-8 h-8 focus:outline-none"
+              className="text-white z-30 relative w-8 h-8 focus:outline-none left-[200px]"
             >
               
               <motion.div
