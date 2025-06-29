@@ -307,7 +307,7 @@ const Menubar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white z-30 relative w-8 h-8 focus:outline-none left-[160px]"
+              className="text-white z-30 relative w-8 h-8 focus:outline-none left-[140px]"
             >
               
               <motion.div
