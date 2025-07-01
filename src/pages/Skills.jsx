@@ -89,7 +89,7 @@ const Skill = ({ name, level, icon }) => {
 
 const Skills = () => {
   return (
-    <section className="p-8">
+    <section className="p-8" id='Skills'>
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-slate-100 mb-2">
           My Skills

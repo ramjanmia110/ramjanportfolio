@@ -95,7 +95,8 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="bg-slate-900   min-h-screen flex items-center justify-center p-4 font-sans">
+    <section id='AboutMe'>
+      <div className="bg-slate-900   min-h-screen flex items-center justify-center p-4 font-sans" >
       
       <div className="w-full max-w-7xl mx-auto">
         <motion.div
@@ -194,6 +195,7 @@ const AboutMe = () => {
         </motion.div>
       </div>
     </div>
+    </section>
   );
 };
 
